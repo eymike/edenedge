@@ -11,3 +11,14 @@
 *.lai
 *.la
 *.a
+
+# VS user files
+*.suo
+*.vcxproj.filters
+*.vcxproj.user
+*.opensdf
+*.sdf
+
+# Build Dirs
+bin
+build
