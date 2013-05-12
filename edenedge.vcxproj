@@ -10,6 +10,9 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\halfedge.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C1D8FCD1-7F7F-40D4-A7BB-390B17643CAE}</ProjectGuid>
     <RootNamespace>edenedge</RootNamespace>
