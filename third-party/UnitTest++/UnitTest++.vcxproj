@@ -11,8 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C1D8FCD1-7F7F-40D4-A7BB-390B17643CAE}</ProjectGuid>
-    <RootNamespace>edenedge</RootNamespace>
+    <ProjectGuid>{DF516316-5806-415E-BFC9-62B01BAD22E3}</ProjectGuid>
+    <RootNamespace>UnitTest</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -41,6 +41,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)build\$(Configuration)\</IntDir>
+    <TargetName>UnitTest++</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -66,6 +67,51 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\AssertException.h" />
+    <ClInclude Include="src\CheckMacros.h" />
+    <ClInclude Include="src\Checks.h" />
+    <ClInclude Include="src\Config.h" />
+    <ClInclude Include="src\CurrentTest.h" />
+    <ClInclude Include="src\DeferredTestReporter.h" />
+    <ClInclude Include="src\DeferredTestResult.h" />
+    <ClInclude Include="src\ExecuteTest.h" />
+    <ClInclude Include="src\MemoryOutStream.h" />
+    <ClInclude Include="src\ReportAssert.h" />
+    <ClInclude Include="src\Test.h" />
+    <ClInclude Include="src\TestDetails.h" />
+    <ClInclude Include="src\TestList.h" />
+    <ClInclude Include="src\TestMacros.h" />
+    <ClInclude Include="src\TestReporter.h" />
+    <ClInclude Include="src\TestReporterStdout.h" />
+    <ClInclude Include="src\TestResults.h" />
+    <ClInclude Include="src\TestRunner.h" />
+    <ClInclude Include="src\TestSuite.h" />
+    <ClInclude Include="src\TimeConstraint.h" />
+    <ClInclude Include="src\TimeHelpers.h" />
+    <ClInclude Include="src\UnitTest++.h" />
+    <ClInclude Include="src\Win32\TimeHelpers.h" />
+    <ClInclude Include="src\XmlTestReporter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AssertException.cpp" />
+    <ClCompile Include="src\Checks.cpp" />
+    <ClCompile Include="src\CurrentTest.cpp" />
+    <ClCompile Include="src\DeferredTestReporter.cpp" />
+    <ClCompile Include="src\DeferredTestResult.cpp" />
+    <ClCompile Include="src\MemoryOutStream.cpp" />
+    <ClCompile Include="src\ReportAssert.cpp" />
+    <ClCompile Include="src\Test.cpp" />
+    <ClCompile Include="src\TestDetails.cpp" />
+    <ClCompile Include="src\TestList.cpp" />
+    <ClCompile Include="src\TestReporter.cpp" />
+    <ClCompile Include="src\TestReporterStdout.cpp" />
+    <ClCompile Include="src\TestResults.cpp" />
+    <ClCompile Include="src\TestRunner.cpp" />
+    <ClCompile Include="src\TimeConstraint.cpp" />
+    <ClCompile Include="src\Win32\TimeHelpers.cpp" />
+    <ClCompile Include="src\XmlTestReporter.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
